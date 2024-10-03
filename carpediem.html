@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cover Image with Text Overlay and Transparent Background</title>
+    
+    <!-- Google Fonts: Libre Baskerville -->
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap" rel="stylesheet">
+
+    <style>
+        /* Apply the Libre Baskerville font to the entire page */
+        body {
+            font-family: 'Libre Baskerville', serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+       
+        /* Styling for the top panel with a cover image and text overlay */
+        .top-panel {
+            position: relative;
+            width: 100%;
+            height: 400px; /* Set the height for the cover image */
+            background: url('picture.png') no-repeat center center/cover; /* Background image */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        /* Transparent box to make the text more readable */
+        .text-overlay {
+            background-color: rgba(32, 32, 32, 0.6); /* Semi-transparent white background */
+            padding: 20px;
+            border-radius: 10px; /* Rounded corners for a smooth look */
+            text-align: center;
+        }
+
+        .text-overlay h1 {
+            font-size: 2.5em;
+            margin: 0;
+            font-weight: 900; /* Bold for the heading */
+            color: #d2e1f0; /* Dark color for text #2c3e50 */
+        }
+        .text-overlay .small-caps {
+            font-variant: small-caps;
+            font-size: 1.2em;
+            margin: 0;
+            font-weight: 900; /* Bold for the heading */
+            color: #d2e1f0; /* Dark color for text #2c3e50 */
+        }       
+        .text-overlay p {
+            font-size: 0.9em;
+            margin: 20px 0 0;
+            color: #d2e1f0; /* Dark color for the text */
+        }
+
+        /* Content section for text and image */
+        .content {
+            width: 100%;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        .content img {
+            width: 100%;
+            height: auto;
+            margin-top: 20px;
+        }
+
+        /* Media query for smaller screens */
+        @media (max-width: 600px) {
+            .top-panel {
+                height: 300px; /* Adjust the height for smaller screens */
+            }
+
+            .text-overlay h1 {
+                font-size: 2em; /* Smaller font for smaller screens */
+            }
+
+            .text-overlay p {
+                font-size: 1em;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<!-- Top panel with background image and text overlay -->
+<div class="top-panel">
+    <div class="text-overlay">
+        <h1>Välkommen till RSMH Carpe&nbsp;Diem</h1>
+        <p class="small-caps">En lokalförening inom Riksförbundet för Social&nbsp;och&nbsp;Mental&nbsp;Hälsa. </p>
+        <p>Vi har kamratstödet i fokus och genom våra aktiviteter motverkar vi den ofrivilliga ensamheten och stödjer varandra för att skapa det liv som vi vill leva.</p>
+        
+    </div>
+</div>
+
+<iframe src="carpediem.pdf" width="100%" height="800px">
+    This browser does not support PDFs. Please download the PDF to view it: 
+    <a href="carpediem.pdf">Download PDF</a>
+</iframe>
+
+</body>
+</html>
+ 
